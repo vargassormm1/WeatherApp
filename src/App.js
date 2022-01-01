@@ -5,7 +5,7 @@ import Weather from "./Components/Weather";
 function App() {
   const [weather, setWeather] = useState({});
   const [zip, setZip] = useState("");
-  const API_URL = `https://api.openweathermap.org/data/2.5/weather?appid=4f0e1ee4f076d6cb61814091eae86568&zip=${zip}&units=imperial`;
+  const API_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.REACT_APP_API_KEY}&zip=${zip}&units=imperial`;
 
   const onZipSubmit = (data) => {
     setZip(data);
