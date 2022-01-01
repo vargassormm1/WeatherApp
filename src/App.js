@@ -39,7 +39,7 @@ function App() {
         <Weather
           cityName={weather.name}
           temp={weather.main.temp}
-          desc={weather.weather[0].desciption}
+          desc={weather.weather[0].description}
           buttonClick={onButtonClick}
         />
       )}
