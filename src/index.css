@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,8 @@
 
 body {
   text-align: center;
-  background-color: #ebebeb;
+  background-color: #dbdefe;
+  font-family: "Nunito", sans-serif;
 }
 
 h1 {
@@ -14,8 +16,8 @@ h1 {
 }
 
 form {
-  background-color: #1c357c;
-  width: 50%;
+  background-color: #1b1c49;
+  width: 40%;
   margin: 3rem auto;
   padding: 5rem 10rem;
   display: flex;
@@ -34,18 +36,22 @@ form input {
 }
 
 form button {
+  background-color: #fed15a;
   margin-top: 1rem;
   width: 50%;
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
 }
+form button:hover {
+  background-color: #fed60a;
+}
 
 .weatherCard {
-  background-color: #1c357c;
+  background-color: #1b1c49;
   color: white;
   margin: 3rem auto;
-  padding: 2rem 7rem;
+  padding: 2rem 5rem;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -53,7 +59,37 @@ form button {
   align-items: center;
   border-radius: 5px;
 }
+.weatherCard h1 {
+  margin-top: 0;
+  font-weight: 400;
+  text-align: left;
+}
+.weatherCard h3 {
+  text-align: center;
+  margin: 1rem;
+  margin-bottom: 0;
+  font-size: 80px;
+  font-weight: 400;
+}
+.weatherCard p {
+  text-align: left;
+}
 .weatherCard button {
   padding: 5px;
   margin: 1rem;
+}
+
+.weatherIcon img {
+  width: 150px;
+  height: auto;
+}
+
+.infoCard button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px solid black;
+}
+.infoCard button:hover {
+  background-color: #f56853;
+  transition: 0.7s ease;
 }

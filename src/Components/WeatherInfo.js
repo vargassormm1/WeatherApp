@@ -15,9 +15,8 @@ const WeatherInfo = (props) => {
     <div className="weatherInfo">
       <h1>{props.city}</h1>
       <p>{today}</p>
-      <h3>{temp}&#176;</h3>
+      <h3>{temp}&#176;F</h3>
       <h2>{props.description}</h2>
-      <button onClick={props.onClick}>Close</button>
     </div>
   );
 };
