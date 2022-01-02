@@ -40,6 +40,7 @@ function App() {
           cityName={weather.name}
           temp={weather.main.temp}
           desc={weather.weather[0].description}
+          icon={weather.weather[0].icon}
           buttonClick={onButtonClick}
         />
       )}

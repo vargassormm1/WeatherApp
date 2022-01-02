@@ -1,7 +1,11 @@
 const WeatherIcon = (props) => {
+  const icon = props.weather;
   return (
     <div>
-      <i class="fas fa-cloud fa-5x"></i>
+      <img
+        src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+        alt="weather Icon"
+      />
     </div>
   );
 };

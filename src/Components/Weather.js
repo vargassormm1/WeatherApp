@@ -9,7 +9,7 @@ const Weather = (props) => {
         description={props.desc}
         onClick={props.buttonClick}
       />
-      <WeatherIcon weather={props.desc} />
+      <WeatherIcon weather={props.icon} />
     </div>
   );
 };
